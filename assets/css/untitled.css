@@ -1,0 +1,14 @@
+::selection {
+  background: #6c12f5;
+  text-shadow: none;
+}
+
+img {
+}
+
+ .download:focus, .download:hover {
+  background-color: #02173d !important;
+  border-color: rgb(233,8,141) !important;
+  color: #fff;
+}
+
