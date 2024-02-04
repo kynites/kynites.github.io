@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Home - BroCredit</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap">
@@ -23,17 +23,44 @@
         #navlist{
             overflow: hidden;
             z-index: 999;
+            width: auto;
+        }
+        .navbars{
+            position: relative;
         }
         .sticky {
         	position: fixed;
         	top: 0;
         	width: 100%;
         }
+        .navbars{
+            position: relative;
+        }
+        .page1-0{
+            margin-top: 100px;
+            font-size: 30px;
+            color: #a612c7;
+            width: 75%;
+            margin-left: 84px;
+        }
+        .page1-1{
+            font-size: 24px;
+            color: #7717f1;
+            width: 75%;
+            margin-left: 84px;
+            padding-top: 0px;
+            margin-top: 4px;
+        }
+        .shadowfeature{
+            border-radius: 0.375rem;
+            background: linear-gradient(145deg, #e6e6e6, #ffffff);
+            box-shadow:  0px 0px 15px 1px #5e6f8e;
+        }
     </style>
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
-    <nav id="navlist" class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
+    <nav id="navlist" class="navbar navbar-expand-md bg-dark py-3 navbars" data-bs-theme="dark">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="d-flex justify-content-center align-items-center me-2 bs-icon"><img width="80" height="80" src="assets/img/splashImage.png"></span><span style="font-size: 30px;font-weight: 600;">&nbsp; BroCredit</span></a>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
@@ -46,23 +73,23 @@
             </div>
         </div>
     </nav>
-    <div class="simple-slider" style="margin-top: 87px;">
+    <div class="simple-slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="row" style="height: 100%;padding-right: 0px;margin-right: 0px;margin-left: 0px;padding-left: 0px;background-color: rgb(3,22,61);">
                         <div class="col" style="padding-left: 0px;"><img style="padding-top: 0px;/*width: 100px;*/padding-left: 0px;margin-left: -76px;margin-top: -46px;" src="assets/img/20240203_121015_0000.png" width="736" height="550"></div>
-                        <div class="col-xxl-6" style="padding-right: 0px;margin-left: 0px;">
-                            <h2 style="margin-top: 132px;font-size: 34px;color: #a612c7;width: 75%;margin-left: 84px;">Unlocking Opportunities, One Loan at a Time</h2>
-                            <h2 style="font-size: 26px;color: #7717f1;width: 75%;margin-left: 84px;padding-top: 0px;margin-top: 4px;">Your Gateway to a Secure Financial Future!</h2>
+                        <div class="col" style="padding-right: 0px;margin-left: 0px;">
+                            <h2 class="page1-0">Unlocking Opportunities, One Loan at a Time</h2>
+                            <h2 class="page1-1">Your Gateway to a Secure Financial Future!</h2>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="row" style="height: 100%;padding-right: 0px;margin-right: 0px;margin-left: 0px;padding-left: 0px;background-color: rgb(3,22,61);">
-                        <div class="col-xxl-6" style="padding-right: 0px;margin-left: 0px;">
-                            <h2 style="margin-top: 132px;font-size: 34px;color: #a612c7;width: 75%;margin-left: 84px;">Empowering Dreams, Bridging Gaps</h2>
-                            <h2 style="font-size: 26px;color: #7717f1;width: 75%;margin-left: 84px;padding-top: 0px;margin-top: 4px;">Your Path to Financial Freedom Starts Here!</h2>
+                        <div class="col" style="padding-right: 0px;margin-left: 0px;">
+                            <h2 class="page1-0">Empowering Dreams, Bridging Gaps</h2>
+                            <h2 class="page1-1">Your Path to Financial Freedom Starts Here!</h2>
                         </div>
                         <div class="col" style="padding-left: 0px;"><img style="padding-top: 0px;/*width: 100px;*/padding-left: 0px;margin-left: -76px;margin-top: -166px;" src="assets/img/20240203_024418_0000-1.png" width="736" height="666"></div>
                     </div>
@@ -81,24 +108,24 @@
             </div>
         </div>
         <div class="container">
-            <div class="row" style="margin-top: -42px;">
-                <div class="col-md-3" style="margin-left: 0px;padding-left: 0px;margin-right: 0px;padding-right: 0px;">
-                    <div id="cardEntrada-2" class="p-4 text-center shadow-lg my-5 rounded-5 ms-5" style="background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);width: 280px;margin-right: 46px;"><img class="pt-2 w-50" src="assets/img/personal-loan.svg">
+            <div class="row" style="margin-top: -42px;justify-content: space-around; ">
+                <div class="col-md-3 col-sm-1 ">
+                    <div id="cardEntrada-2" class="p-4 text-center shadow-lg rounded-5" style="margin-top: 10px;background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);"><img class="pt-2 w-50" src="assets/img/personal-loan.svg">
                         <h3 class="text-white text-center pt-2">Personal Loan</h3>
                     </div>
                 </div>
-                <div class="col-md-3" style="padding-left: 0px;margin-right: 0px;padding-right: 0px;">
-                    <div id="cardEntrada-1" class="p-4 text-center shadow-lg my-5 rounded-5 ms-5" style="background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);width: 280px;margin-left: 30px;margin-right: 32px;"><img class="pt-2 w-50" src="assets/img/business-loan.svg">
+                <div class="col-md-3 col-sm-1";">
+                    <div id="cardEntrada-1" class="p-4 text-center shadow-lg rounded-5" style="margin-top: 10px;background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);margin-left: 0px;"><img class="pt-2 w-50" src="assets/img/business-loan.svg">
                         <h3 class="text-white text-center pt-2">Business Loan</h3>
                     </div>
                 </div>
-                <div class="col-md-3" style="margin-left: 0px;padding-left: 0px;padding-right: 2px;">
-                    <div id="cardEntrada-3" class="p-4 text-center shadow-lg my-5 rounded-5 ms-5" style="background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);width: 280px;margin-left: 32px;margin-right: 32px;"><img class="pt-2 w-50" src="assets/img/Mediamodifier-Design.svg">
+                <div class="col-md-3 col-sm-1"">
+                    <div id="cardEntrada-3" class="p-4 text-center shadow-lg rounded-5" style="margin-top: 10px;background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);margin-left: 0px;"><img class="pt-2 w-50" src="assets/img/Mediamodifier-Design.svg">
                         <h3 class="text-white text-center pt-2">Home Loan</h3>
                     </div>
                 </div>
-                <div class="col-md-3" style="padding-left: 0px;padding-right: 2px;">
-                    <div id="cardEntrada-4" class="p-4 text-center shadow-lg my-5 rounded-5 ms-5" style="background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);width: 280px;"><img class="pt-2 w-50" src="assets/img/Mediamodifier-Design%20(4).svg">
+                <div class="col-md-3 col-sm-1"">
+                    <div id="cardEntrada-4" class="p-4 text-center shadow-lg  rounded-5" style="margin-top: 10px;background: linear-gradient(171deg, var(--bs-pink) 0%, var(--bs-indigo) 100%), var(--bs-purple);"><img class="pt-2 w-50" src="assets/img/Mediamodifier-Design%20(4).svg">
                         <h3 class="text-white text-center pt-2">Vehicle Loan</h3>
                     </div>
                 </div>
@@ -112,33 +139,33 @@
         </div>
         <div class="container h-100 position-relative" style="top: -50px;">
             <div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col">
+                <div class="col d-flex">
                     <div class="card">
-                        <div class="card-body pt-5 p-4" style="height: 100%;margin-bottom: -4px;">
+                        <div class="card-body pt-5 p-4 shadowfeature " style="height: 100%;margin-bottom: -4px;">
                             <h4 class="card-title" style="font-size: 21px;color: #02173d;">Ensuring Data Security</h4>
                             <p class="card-text" style="margin-bottom: 33px;">Your Information is safeguard by our comprehensive data security</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="card">
-                        <div class="card-body pt-5 p-4" style="height: 100%;">
+                        <div class="card-body pt-5 p-4 shadowfeature" style="height: 100%;">
                             <h4 class="card-title" style="font-size: 20px;color: #02173d;">100% Digital Process</h4>
                             <p class="card-text" style="margin-bottom: 57px;">Embrace the simplicity of our digital approach.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="card">
-                        <div class="card-body pt-5 p-4">
+                        <div class="card-body pt-5 p-4 shadowfeature">
                             <h4 class="card-title" style="font-size: 20px;color: #02173d;">Best Interest Rates</h4>
                             <p class="card-text" style="padding-bottom: 0px;margin-bottom: 57px;">We get the best offers for your Profile.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="card">
-                        <div class="card-body pt-5 p-4">
+                        <div class="card-body pt-5 p-4 shadowfeature">
                             <h4 class="card-title" style="font-size: 20px;color: #02173d;">New Age Finance</h4>
                             <p class="card-text" style="margin-bottom: 2px;">BroCredit is not typical boring loan company offers you the seamless and time saving experience.</p>
                         </div>
@@ -343,7 +370,7 @@
         
         /* Function to stick the nav bar */
         function myFunction() {
-        	if (window.pageYOffset >= sticky) {
+        	if (window.pageYOffset - navlist.clientHeight >= sticky) {
         		navlist.classList.add("sticky")
         	}
         	else {
