@@ -55,12 +55,37 @@
             border-radius: 10px;
             box-shadow:  0px 0px 5px 4px #e36cdd;
         }
+        .logotext{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .logo{
+            height: 80px;
+            width: 80px;
+        }
+        @media (max-width: 576px)  {
+            .logo{
+                height: 60px;
+                width: 60px;
+                margin-left: 50px;
+            }
+            .logotext{
+                font-size: 24px;
+                font-weight: 600;
+                margin-left: 20px;
+            }   
+        }
     </style>
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav id="navlist" class="navbar navbar-expand-md bg-dark py-3 navbars" data-bs-theme="dark">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="d-flex justify-content-center align-items-center me-2 bs-icon"><img width="80" height="80" src="assets/img/splashImage.png"></span><span style="font-size: 30px;font-weight: 600;">&nbsp; BroCredit</span></a>
+        <div class="container" style="text-align: center;">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="d-flex justify-content-center align-items-center me-2 bs-icon">
+                    <img class="logo" src="assets/img/splashImage.png"></span>
+                <span class="logotext">&nbsp; BroCredit</span>
+            </a>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
                     <a href="#download"><li class="nav-item">
