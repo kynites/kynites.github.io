@@ -56,6 +56,10 @@
 }
 
 .bg-dark {
-  background-color: #02173d !important;
+  background-color: #010a1c !important;
 }
 
+.bg-blue{
+  background: linear-gradient(#4e6fff,#00003f);
+  opacity: 0.5;
+}
