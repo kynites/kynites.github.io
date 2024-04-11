@@ -20,7 +20,49 @@
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
     <style>
-        
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.527); /* Black w/ opacity */
+        }
+        table{
+            margin-top: 20px;
+            width: 100%;
+        }
+        tr{
+            width: 100%;
+            text-align: justify;
+        }
+        td:first-child{
+            width: 50%;
+            padding-left: 20%;
+        }
+        td:last-child{
+            width: 50%;
+            padding-left: 10%;
+        }
+        /* Modal content */
+        .modal-content {
+            background-color: #1e2743;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            padding-left: 2;
+            border: 1px solid #888;
+            text-align: center;
+            color: #ffffff;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        .field-class{
+            border-radius: 5px;
+            width: 50%;
+            height: 35px;
+        }
         .hero{
             position: absolute;
         }
@@ -226,9 +268,9 @@
             </a>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
-                    <a href="#download"><li class="nav-item">
-                        <button class="btn download" type="button" style="background-color: rgb(233,8,141);">
-                            Download Our App Now</button>
+                    <a><li class="nav-item">
+                        <button class="btn download" id="openModalBtn" type="button" style="background-color: rgb(233,8,141);">
+                            Contact Us</button>
                         </li>
                     </a>
                 </ul>
@@ -275,6 +317,41 @@
         </div >
         </div>
     </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"></span>
+          <h2>Contact Details</h2>
+          <form action="https://formspree.io/f/xnqeogko" method="POST">
+             <table>
+                <tr>
+                    <td><label for="name">Full Name:</label></td>
+                    <td><input class="field-class" type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input class="field-class" type="phone" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="loan">Required Loan Amount:</label></td>
+                    <td><input class="field-class" type="number" id="loan" name="loan" required></td>
+                </tr>
+                <tr>
+                    <td><label for="prof">Profession:</label></td>
+                    <td><input class="field-class" type="text" id="prof" name="prof" required></td>
+                </tr>
+                <tr>
+                    <td><label for="loc">Location:</label></td>
+                    <td><input class="field-class" type="text" id="loc" name="loc" required></td>
+                </tr>
+            </table>
+              <input type="hidden" name="_next" value="https://kynites.github.io/">
+              <input type="submit" class="btn download" style="background-color: rgb(233,8,141);margin-top: 20px;" value="Submit">
+          </form>
+        </div>
+      
+      </div>
     <div class="py-4 py-xl-5" style="padding-left: 40px;padding-right: 40px;">
         <div class="row mb-5" style="margin-bottom: 0px;padding-bottom: 4px;">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -531,6 +608,31 @@
         	else {
         		navlist.classList.remove("sticky");
         	}
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModalBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
         }
     </script>
 </body>
